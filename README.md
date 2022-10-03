@@ -4,7 +4,7 @@ Plugin for the JOSM OpenStreetMap editor. Turns a closed rectangular way into a 
 
 ## Installing
 
-Put the .jar file in your JOSM plugins directory. Start JOSM and the *L-shaped terrace* option should be available in the *More tools* menu.
+Put the .jar file in your JOSM plugins directory. Start JOSM and the *L-Shaped Terrace* option should be available in the *More tools* menu.
 
 ## Using
 
@@ -12,12 +12,22 @@ Put the .jar file in your JOSM plugins directory. Start JOSM and the *L-shaped t
 2. Tag it with building type, street name, etc. The plugin will copy these tags to each house.
 3. Make sure the outline is selected.
 4. Optionally, also select an L-shaped way (with 6 nodes) to serve as a template. Its proportions will be used to set the default cutout size and number of houses in the plugin dialog. This way will not be modified or deleted by the plugin.
-5. Run the plugin from the *L-shaped terrace* option in the *More tools* menu.
-6. Amend the cutout size, orientation and number of houses to suit. The dialog provides a preview of the shape of the first house, and an arrow indicating the terracing direction.
+
+![Screenshot of rectangular outline and template selected](lsterrace-before.png)
+
+5. Run the plugin from the *L-Shaped Terrace* option in the *More tools* menu.
+
+![Screenshot of LST dialog](lsterrace-dialog.png)
+
+6. Amend the cutout size, orientation and number of houses to suit. The dialog provides a preview of the shape and orientation of the first house, and an arrow indicating the terracing and numbering direction.
 7. For a terrace of normal rectangular buildings, set either cutout dimension to zero.
 8. If numbering is required, provide the first house number and interpolation type.
 9. Click OK.
 10. The outline will be replaced with a terrace of L-shaped buildings.
+
+![Screenshot of finished row of houses](lsterrace-after.png)
+
+11. Now you can make any adjustments for house extensions etc, and delete the template way if necessary.
 
 ## Building
 
