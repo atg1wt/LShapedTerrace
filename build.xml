@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<project name="LShapedTerrace" default="dist" basedir=".">
+
+	<!-- SVN commit message -->
+	<property name="commit.message" value="Initial commit"/>
+
+	<!-- *Lowest* JOSM version this plugin is currently compatible with -->
+	<!-- Tested on 15937 and 17013 -->
+	<!-- UndoRedoHandler.getInstance requires 14134 so it can't be lower than that -->
+	<property name="plugin.main.version" value="15937"/>
+
+	<!-- build-common copies this to plugin.version -->
+	<property name="version.entry.commit.revision" value="0.0.1"/>
+
+	<property name="plugin.author" value="Tyrone C"/>
+	<property name="plugin.class" value="org.openstreetmap.josm.plugins.lshapedterrace.LShapedTerracePlugin"/>
+	<property name="plugin.description" value="Make L-shaped terraces from rectangular blocks"/>
+	<property name="plugin.icon" value="images/dialogs/l_terrace.png"/>
+	<property name="plugin.link" value="https://github.com/atg1wt/l-shaped-terrace"/>
+	<property name="plugin.canloadatruntime" value="true"/>
+	
+	<!-- ** include targets that all plugins have in common ** -->
+	<import file="../build-common.xml"/>
+  
+</project>
