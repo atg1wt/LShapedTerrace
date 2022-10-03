@@ -19,7 +19,7 @@ Put the .jar file in your JOSM plugins directory. Start JOSM and the *L-Shaped T
 
 ![Screenshot of LST dialog](lsterrace-dialog.png)
 
-6. Amend the cutout size, orientation and number of houses to suit. The dialog provides a preview of the shape and orientation of the first house, and an arrow indicating the terracing and numbering direction.
+6. Amend the cutout size, orientation and number of houses to suit. The dialog provides a preview of the shape and orientation of the first house, and an arrow indicating the direction in which terracing and numbering will continue.
 7. For a terrace of normal rectangular buildings, set either cutout dimension to zero.
 8. If numbering is required, provide the first house number and interpolation type.
 9. Click OK.
@@ -45,7 +45,7 @@ I haven't yet submitted this plugin to the official repos or plugin list (though
 
 - It's currently English-only, I haven't yet made any provision for i18n.
 
-- This is quite similar to (though not derived from) the existing *Terracer* plugin, and I don't want to step on any toes.
+- This is quite similar to (though not derived from) the existing *Terracer* plugin, and I don't want to step on any toes!
 
 ## License
 
