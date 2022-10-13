@@ -15,11 +15,21 @@
 	<property name="plugin.author" value="Tyrone C"/>
 	<property name="plugin.class" value="org.openstreetmap.josm.plugins.lshapedterrace.LShapedTerracePlugin"/>
 	<property name="plugin.description" value="Make L-shaped terraces from rectangular blocks"/>
-	<property name="plugin.icon" value="images/dialogs/l_terrace.png"/>
-	<property name="plugin.link" value="https://github.com/atg1wt/l-shaped-terrace"/>
+	<property name="plugin.icon" value="images/l_terrace.png"/>
+	<property name="plugin.link" value="https://github.com/atg1wt/LShapedTerrace"/>
 	<property name="plugin.canloadatruntime" value="true"/>
 	
 	<!-- ** include targets that all plugins have in common ** -->
 	<import file="../build-common.xml"/>
-  
+
+	<!-- `ant clean` deletes this, then the build sulks because it doesn't exist -->
+	<mkdir dir="javadoc"/>
+
+	<target name="post-dist">
+		<!-- copy jar to own repo dist folder -->
+		<copy file="C:\JOSMDev\josm\dist\LShapedTerrace.jar" tofile="C:\JOSMDev\josm\plugins\LShapedTerrace\dist\LShapedTerrace.jar"/>
+		<!-- copy jar to user profile JOSM plugins dir -->
+		<copy file="C:\JOSMDev\josm\dist\LShapedTerrace.jar" tofile="C:\Users\MrT\AppData\Roaming\JOSM\plugins\LShapedTerrace.jar"/>
+	</target>
+
 </project>

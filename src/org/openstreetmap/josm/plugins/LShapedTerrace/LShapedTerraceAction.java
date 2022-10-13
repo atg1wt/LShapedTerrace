@@ -44,7 +44,7 @@ public final class LShapedTerraceAction extends JosmAction {
 	public LShapedTerraceAction() {
 		super(
 			"L-shaped terrace",	// menu text
-			"dialogs/l_terrace.png",	// icon filename
+			"l_terrace.png",	// icon filename
 			"Converts a rectangular building to a row of L-shaped buildings",	// tooltip
 			null,	// shortcut
 			false,	// register action for toolbar prefs?
@@ -52,8 +52,8 @@ public final class LShapedTerraceAction extends JosmAction {
 		);
 	}
 
-    @Override
-    public void actionPerformed(ActionEvent evt) {
+	@Override
+	public void actionPerformed(ActionEvent evt) {
 		if (decomposeSelection()) {
 			getValuesFromWays();
 			doTerracing();

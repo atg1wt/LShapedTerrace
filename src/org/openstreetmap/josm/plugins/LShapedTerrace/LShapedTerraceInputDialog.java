@@ -197,11 +197,11 @@ public class LShapedTerraceInputDialog extends ExtendedDialog {
 		mainPanel.add(previewPanel, GBC.eol().anchor(GBC.CENTER) );
 
 		mainPanel.add( new JLabel("Number of houses:"), GBC.std() );
-		mainPanel.add(numHousesTextField,GBC.eol().fill(GBC.HORIZONTAL) );
+		mainPanel.add(numHousesTextField,GBC.eol().fill(GBC.HORIZONTAL).insets(0,4,0,0) );
 		mainPanel.add( new JLabel("First house number:"), GBC.std() );
-		mainPanel.add(firstNumberTextField, GBC.eol().fill(GBC.HORIZONTAL) );
+		mainPanel.add(firstNumberTextField, GBC.eol().fill(GBC.HORIZONTAL).insets(0,4,0,0) );
 		mainPanel.add( new JLabel("Interpolation:"), GBC.std() );
-		mainPanel.add(cboInterpolate, GBC.eol().fill(GBC.HORIZONTAL) );
+		mainPanel.add(cboInterpolate, GBC.eol().fill(GBC.HORIZONTAL).insets(0,4,0,0) );
 
 		setContent(mainPanel);
 		setDefaultButton(1);
